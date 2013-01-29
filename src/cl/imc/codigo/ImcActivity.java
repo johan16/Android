@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class ImcActivity extends Activity {
 
@@ -16,6 +17,8 @@ public class ImcActivity extends Activity {
 		
 		//mapear variables de XML
 		Button btnCalcular = (Button) this.findViewById(R.id.btnCalcular);
+		EditText txtPeso = (EditText) this.findViewById(R.id.txtPeso);
+		EditText txtAltura = (EditText) this.findViewById(R.id.txtAltura);
 	}
 
 	@Override
