@@ -19,6 +19,8 @@ public class ImcActivity extends Activity {
 		Button btnCalcular = (Button) this.findViewById(R.id.btnCalcular);
 		EditText txtPeso = (EditText) this.findViewById(R.id.txtPeso);
 		EditText txtAltura = (EditText) this.findViewById(R.id.txtAltura);
+		
+		//Asignar el lisener al boton
 	}
 
 	@Override
