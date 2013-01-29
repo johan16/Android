@@ -18,7 +18,7 @@ public class ImcActivity extends Activity {
 		
 		//mapear variables de XML
 		Button btnCalcular = (Button) this.findViewById(R.id.btnCalcular);
-		EditText txtPeso = (EditText) this.findViewById(R.id.txtPeso);
+		final EditText txtPeso = (EditText) this.findViewById(R.id.txtPeso);
 		final EditText txtAltura = (EditText) this.findViewById(R.id.txtAltura);
 		
 		//Asignar el lisener al boton
@@ -29,6 +29,7 @@ public class ImcActivity extends Activity {
 				// TODO Auto-generated method stub
 				String sAltura = txtAltura.getText().toString();
 				String sPeso = txtPeso.getText().toString();
+				
 			}
 		});
 	}
