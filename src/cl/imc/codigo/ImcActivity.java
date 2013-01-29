@@ -3,6 +3,7 @@ package cl.imc.codigo;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -21,6 +22,14 @@ public class ImcActivity extends Activity {
 		EditText txtAltura = (EditText) this.findViewById(R.id.txtAltura);
 		
 		//Asignar el lisener al boton
+		btnCalcular.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+			}
+		})
 	}
 
 	@Override
