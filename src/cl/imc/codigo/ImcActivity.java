@@ -29,7 +29,9 @@ public class ImcActivity extends Activity {
 				// TODO Auto-generated method stub
 				String sAltura = txtAltura.getText().toString();
 				String sPeso = txtPeso.getText().toString();
-				
+				double peso = Double.parseDouble(sPeso);
+				double altura = Double.parseDouble(sAltura);
+				double imc = Imc.calcularImc(peso, altura);
 			}
 		});
 	}
