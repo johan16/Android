@@ -3,6 +3,7 @@ package cl.imc.codigo;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.Button;
 
 public class ImcActivity extends Activity {
 
@@ -14,6 +15,7 @@ public class ImcActivity extends Activity {
 		this.setContentView(R.layout.activity_imc);
 		
 		//mapear variables de XML
+		Button btnCalcular = this.findViewById(R.id.btnCalcular);
 	}
 
 	@Override
