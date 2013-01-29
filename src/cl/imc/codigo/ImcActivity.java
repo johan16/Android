@@ -15,7 +15,7 @@ public class ImcActivity extends Activity {
 		this.setContentView(R.layout.activity_imc);
 		
 		//mapear variables de XML
-		Button btnCalcular = this.findViewById(R.id.btnCalcular);
+		Button btnCalcular = (Button) this.findViewById(R.id.btnCalcular);
 	}
 
 	@Override
