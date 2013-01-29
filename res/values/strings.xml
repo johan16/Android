@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Imc</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Ingresa tus valores</string>
     <string name="menu_settings">Settings</string>
     <string name="hintPeso">Ingrese su peso</string>
     <string name="hintAltura">Ingrese su altura</string>

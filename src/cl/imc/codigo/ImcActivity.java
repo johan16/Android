@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class ImcActivity extends Activity {
 
@@ -20,6 +21,7 @@ public class ImcActivity extends Activity {
 		Button btnCalcular = (Button) this.findViewById(R.id.btnCalcular);
 		final EditText txtPeso = (EditText) this.findViewById(R.id.txtPeso);
 		final EditText txtAltura = (EditText) this.findViewById(R.id.txtAltura);
+		final TextView tvMensaje = (TextView) this.findViewById(R.id.tvMensaje);
 		
 		//Asignar el lisener al boton
 		btnCalcular.setOnClickListener(new View.OnClickListener() {
@@ -29,9 +31,12 @@ public class ImcActivity extends Activity {
 				// TODO Auto-generated method stub
 				String sAltura = txtAltura.getText().toString();
 				String sPeso = txtPeso.getText().toString();
+				
 				double peso = Double.parseDouble(sPeso);
 				double altura = Double.parseDouble(sAltura);
+				
 				double imc = Imc.calcularImc(peso, altura);
+				
 			}
 		});
 	}
