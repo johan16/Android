@@ -9,7 +9,11 @@ public class ImcActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_imc);
+		//setContentView(R.layout.activity_imc);
+		//Asignar layayr
+		this.setContentView(R.layout.activity_imc);
+		
+		//mapear variables de XML
 	}
 
 	@Override
