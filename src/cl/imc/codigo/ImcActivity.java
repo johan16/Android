@@ -37,6 +37,7 @@ public class ImcActivity extends Activity {
 				
 				double imc = Imc.calcularImc(peso, altura);
 				
+				tvMensaje.setText("Tu IMC es :" + imc);
 			}
 		});
 	}

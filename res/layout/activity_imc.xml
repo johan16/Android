@@ -33,8 +33,8 @@
         android:id="@+id/btnCalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/txtAltura"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
         android:text="@string/btnCalcular" />
 
