@@ -3,6 +3,7 @@ package cl.imc.codigo;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
@@ -65,8 +66,23 @@ public class ImcActivity extends Activity {
 		// TODO Auto-generated method stub
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle("Indicador IMC");
-		builder.setMessage("Tu IMC es: " + imc);
-		builder.show();
+		builder	.setMessage("Tu IMC es: " + imc)
+				.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						lanzarResultado();
+					}
+				})
+				.setNegativeButton("No", new DialogInterface.OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						
+					}
+				}).create().show();
 		
 	}
 	
