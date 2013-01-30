@@ -7,5 +7,6 @@
     <string name="hintPeso">Ingrese su peso</string>
     <string name="hintAltura">Ingrese su altura</string>
     <string name="btnCalcular">Calcula IMC</string>
+    <string name="btnResultado">RESULTADO</string>
 
 </resources>

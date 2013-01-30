@@ -3,6 +3,7 @@ package cl.imc.codigo;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -22,8 +23,7 @@ public class ImcActivity extends Activity {
 		Button btnCalcular = (Button) this.findViewById(R.id.btnCalcular);
 		final EditText txtPeso = (EditText) this.findViewById(R.id.txtPeso);
 		final EditText txtAltura = (EditText) this.findViewById(R.id.txtAltura);
-		final TextView tvMensaje = (TextView) this.findViewById(R.id.tvMensaje);
-		
+		Button btnResultado = (Button) this.findViewById(R.id.btnResultado);
 		//Asignar el lisener al boton
 		btnCalcular.setOnClickListener(new View.OnClickListener() {
 			
@@ -44,6 +44,22 @@ public class ImcActivity extends Activity {
 				//tvMensaje.setText("Tu IMC es: " + imc);
 			}
 		});
+		//Asignar lisener al boton resulddo
+		btnResultado.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				lanzarResultado();
+			}
+		});
+	}
+
+	protected void lanzarResultado() {
+		// TODO Auto-generated method stub
+		Intent i = new Intent(this, ResultadoActivity.class);
+		this.startActivity(i);
+		
 	}
 
 	protected void mostrarDialogo(String imc) {
@@ -54,6 +70,8 @@ public class ImcActivity extends Activity {
 		builder.show();
 		
 	}
+	
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

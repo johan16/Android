@@ -38,13 +38,13 @@
         android:layout_marginTop="28dp"
         android:text="@string/btnCalcular" />
 
-    <TextView
-        android:id="@+id/tvMensaje"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnResultado"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/btnCalcular"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
-        android:text="@string/hello_world" />
+        android:layout_marginTop="18dp"
+        android:text="@string/btnResultado" />
 
 </RelativeLayout>
