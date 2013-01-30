@@ -27,7 +27,7 @@
         android:layout_marginTop="22dp"
         android:ems="16"
         android:hint="@string/hintAltura"
-        android:inputType="number" />
+        android:inputType="number|numberDecimal" />
 
     <Button
         android:id="@+id/btnCalcular"
