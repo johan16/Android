@@ -8,5 +8,6 @@
     <string name="hintAltura">Ingrese su altura</string>
     <string name="btnCalcular">Calcula IMC</string>
     <string name="btnResultado">RESULTADO</string>
+    <string name="btnVolver">VOLVER</string>
 
 </resources>
