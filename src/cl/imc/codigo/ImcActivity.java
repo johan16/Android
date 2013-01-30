@@ -16,7 +16,7 @@ public class ImcActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		//Asignar layayr
+		//Asignar layout
 		this.setContentView(R.layout.activity_imc);
 		
 		//mapear variables de XML
