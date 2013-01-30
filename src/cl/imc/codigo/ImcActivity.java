@@ -2,6 +2,7 @@ package cl.imc.codigo;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -36,10 +37,22 @@ public class ImcActivity extends Activity {
 				double altura = Double.parseDouble(sAltura);
 				
 				double imc = Imc.calcularImc(peso, altura);
+				String sImc = String.valueOf(imc);
 				
-				tvMensaje.setText("Tu IMC es :" + imc);
+				//Desplegar mensaje
+				mostrarDialogo(sImc);
+				//tvMensaje.setText("Tu IMC es: " + imc);
 			}
 		});
+	}
+
+	protected void mostrarDialogo(String imc) {
+		// TODO Auto-generated method stub
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle("Indicador IMC");
+		builder.setMessage("Tu IMC es: " + imc);
+		builder.show();
+		
 	}
 
 	@Override
